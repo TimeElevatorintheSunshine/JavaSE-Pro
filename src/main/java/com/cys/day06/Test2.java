@@ -10,17 +10,16 @@ package com.cys.day06;
 public class Test2 {
     public static void main(String[] args) {
         int count =0;
-        int count1 = 2;
         for (int i = 1; i < 1000; i++) {
             if (i % 2 ==0 && i%3 ==0){
                 count++;
                 System.out.print(i +"\t");
-                if (count1  == count){
+                if (count  ==  2){
                     System.out.println("");
-                    count1 +=5;
                 }
-                if (count % 5 ==0){
+                if (count == 5){
                     System.out.println("");
+                    count =0;
                 }
             }
         }
