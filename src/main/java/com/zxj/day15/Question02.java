@@ -23,8 +23,11 @@ public class Question02 {
         students.add(new Student("北京","爷"));
         students.add(new Student("武汉","喜羊羊"));
         for (int i = 0; i < students.size(); i++) {
-            if (students.get(i).getName().equals("爷"));
+            if (students.get(i).getName().equals("爷")){
+                students.get(i).setLocal("米国");
+            }
         }
+        System.out.println(students);
     }
 }
 
